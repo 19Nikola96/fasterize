@@ -1,0 +1,91 @@
+ul {
+    width: 100%;
+    padding-left: 0;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li div {
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #00000077;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul .li-head {
+    padding: 22px 30px;
+}
+
+ul .li-head div:nth-of-type(even) {
+    text-align: start;
+}
+
+ul .li-row {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 3px 3px #0000000d;
+    border: .5px #0000000e;
+    padding: 25px 25px;
+}
+
+ul .li-row .url,  ul .li-row .flags, ul .li-row .cld-pop {
+    text-align: start;
+}
+
+ul .li-row .url {
+    font-weight: 600;
+}
+
+ul .li-row .status {
+    font-size: 28px;
+}
+
+ul .li-row .flags span {
+    background-color: #1565C0;
+    color: white;
+    font-size: 10px;
+    padding: 0 6px 2px 4px;
+    margin-left: 3px;
+}
+
+ul .li-row .cld-status span {
+    background-color: #D0021B;
+    padding: 0 5px 4px 6px;
+    color: white;
+    border-radius: 10px;
+} 
+
+ul .li-skeleton {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 3px 3px #0000000d;
+    border: .5px #0000000e;
+    padding: 25px 85px;
+}
+
+ul .li-skeleton div {
+    background: linear-gradient(to right ,#00000010,#00000010, #00000005,#00000010,#00000010);
+    height: 20px;
+    width: 80px;
+    animation-name: skeletonAnim;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+}
+
+@keyframes skeletonAnim {
+    0% {
+        background-position: -80px
+    }
+    100% {
+        background-position: 0px
+    }
+}
